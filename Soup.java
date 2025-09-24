@@ -1,3 +1,7 @@
+//Name: Daisuke Watanabe
+//Date: 09/24/25
+//Description: This program will run about random letter in the alphabet soup
+
 public class Soup {
     //these are instance variables 
     private String letters;
@@ -29,7 +33,7 @@ public class Soup {
 
     //adds a word to the pool of letters known as "letters"
     public void add(String word){
-
+        letters = letters + word;
     }
 
 
