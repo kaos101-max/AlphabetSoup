@@ -47,13 +47,19 @@ public class Soup {
     //returns the letters currently stored with the company name placed directly in the center of all
     //the letters
     public String companyCentered(){
-        return "";
+        int center = letters.length()/2;
+        String firstHalf = letters.substring(0, center);
+        String secondHalf = letters.substring(center);
+        return firstHalf + company + secondHalf;
         
     }
 
 
     //should remove the first available vowel from letters. If there are no vowels this method has no effect.
     public void removeFirstVowel(){
+            }
+        }
+
         
     }
 
