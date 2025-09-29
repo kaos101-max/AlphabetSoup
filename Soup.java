@@ -1,6 +1,6 @@
 //Name: Daisuke Watanabe
 //Date: 09/24/25
-//Description: This program will run about random letter in the alphabet soup
+//Description: This program will run about random letters in the alphabet soup
 
 public class Soup {
     //these are instance variables 
@@ -35,15 +35,11 @@ public class Soup {
     public void add(String word){
         letters = letters + word;
     }
-
-
     //Use Math.random() to get a random character from the letters string and return it.
     public char randomLetter(){
         int random = (int) (math.random()*letters.length());
         return letters.charAt(random);
     }
-
-
     //returns the letters currently stored with the company name placed directly in the center of all
     //the letters
     public String companyCentered(){
@@ -51,24 +47,26 @@ public class Soup {
         String oneHalf = letters.substring(0, core);
         String twoHalf = letters.substring(core);
         return oneHalf + company + twoHalf;
-        
+    
     }
-
-
     //should remove the first available vowel from letters. If there are no vowels this method has no effect.
     public void removeFirstVowel(){
         letters = letters.replaceFirst("[AEIOUaeiou]", "");
+        //completed
             }
         }
     }
 
     //should remove "num" letters from a random spot in the string letters. You may assume num never exceeds the length of the string.
     public void removeSome(int num){
-        int startIndex = int (Math.random()*)
+        int startIndex = (int)(Math.random() * (letters.length() - num));
+        String replacement = "";
+            
     }
 
     //should remove the word "word" from the string letters. If the word is not found in letters then it does nothing.
     public void removeWord(String word){
         
+
     }
 }
